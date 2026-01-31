@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+
+@layer utilities {
+    .animate-in {
+        animate-fill-mode: both;
+    }
+
+    .slide-in {
+        animation-name: slideIn;
+    }
+
+    .duration-300 {
+        animation-duration: 300ms;
+    }
+}
+
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(1rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
