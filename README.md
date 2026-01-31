@@ -1,2 +1,2 @@
 # FrontendPractise
-Prepping for Frontend Interviews (React &amp; TailwindCSS).
+Prepping for Frontend Interviews (React and TailwindCSS).
