@@ -47,7 +47,7 @@ export default function Navbar () {
 
 
             {isMobile && (
-                <div className='fixed right-0 z-50 w-64 min-h-screen md:hidden bg-slate-900/90 backdrop-blur-lg border-t border-l border-slate-800 animate-in slide-in duration-300'>
+                <div className='fixed right-0 z-50 w-64 min-h-screen md:hidden bg-slate-900/90 backdrop-blur-lg border-t border-l border-slate-800 animate-in slide-in-right duration-300'>
                     <div className='pr-4 py-2 sm:py-4 sm:space-y-1 flex flex-col'>
                         <a href="#features" className="py-2 pl-4 text-gray-300 hover:text-white hover:bg-slate-800 text-sm lg:text-base" onClick={() => setIsMobile(false) }>
                             Features

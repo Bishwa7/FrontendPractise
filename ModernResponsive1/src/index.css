@@ -3,20 +3,46 @@
 
 @layer utilities {
     .animate-in {
-        animate-fill-mode: both;
+        animation-fill-mode: both;
     }
 
-    .slide-in {
-        animation-name: slideIn;
+    .slide-in-right {
+        animation-name: slideInRight;
+    }
+
+    .slide-in-bottom {
+        animation-name: slideInBottom;
+    }
+
+    .duration-200 {
+        animation-duration: 200ms;
     }
 
     .duration-300 {
         animation-duration: 300ms;
     }
+
+    .duration-700 {
+        animation-duration: 700ms;
+    }
+
+    .delay-100 {
+        animation-delay: 100ms;
+    }
+
+    .delay-200 {
+        animation-delay: 200ms;
+    }
+
+    .delay-300 {
+        animation-delay: 300ms;
+    }
+    
 }
 
 
-@keyframes slideIn {
+
+@keyframes slideInRight {
     from {
         opacity: 0;
         transform: translateX(1rem);
@@ -25,5 +51,18 @@
     to {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+
+@keyframes slideInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
